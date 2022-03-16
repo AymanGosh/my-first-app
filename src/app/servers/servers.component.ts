@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
    
  allowNewServer:any = false;
-     
+ isServerCreated:boolean = false;
   constructor() {
     setTimeout(() => {
       this.allowNewServer = true;
@@ -16,7 +16,7 @@ export class ServersComponent implements OnInit {
     , 2000);
   }
   onClick(){
-    this.allowNewServer = " i have been clicked ";
+    this.isServerCreated = true;
   }
   ngOnInit(): void {
   }
