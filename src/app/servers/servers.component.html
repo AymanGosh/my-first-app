@@ -1,3 +1,3 @@
 <p>servers works!</p>
-<button  class="btn btn-primary" [disabled]="!allowNewServer" >Add Server</button>
+<button  class="btn btn-primary" [disabled]="!allowNewServer"  (click)="onClick()" >Add Server</button>
 <p [innerText]="allowNewServer" >  </p>
