@@ -21,4 +21,8 @@ export class ServersComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onUpdateServerName(event: Event){
+    this.allowNewServer = (<HTMLInputElement>event.target).value;
+  }
+
 }
